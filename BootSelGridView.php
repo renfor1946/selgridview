@@ -52,7 +52,7 @@ class BootSelGridView extends TbGridView
     */
     protected function initColumns()
     {
-        parent::initColumns();
+        // move to line 77
 
         if($this->selectableRows == 0) return;
 
@@ -74,7 +74,7 @@ class BootSelGridView extends TbGridView
                 return;
             }
         }
-
+        parent::initColumns();
         //creating hidden checkbox column
         $checkboxColumn = new CCheckBoxColumn($this);   
         $checkboxColumn->checked = $checkedExpression;
